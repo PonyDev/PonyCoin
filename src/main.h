@@ -562,9 +562,8 @@ public:
         // pool can't handle when coinbase hashed original way
         static const unsigned int nPoolTime = 1485324000;    // Wed, 25 Jan 2017 06:00:00 GMT
         static const unsigned int nPoolTimeTestnet = 1485243529;
-        if ((!this->IsCoinBase()) ||
-            (this->nTime < nPoolTime) ||
-            (fTestNet && (this->nTime < nPoolTimeTestnet)))
+        if (((!this->IsCoinBase()) || (!fTestNet && (this->nTime < nPoolTime))) ||
+            (this->nTime < nPoolTimeTestnet))
         {
             CTransaction txTmp(*this);
             // Blank the sigs
