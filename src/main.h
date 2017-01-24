@@ -559,13 +559,25 @@ public:
     // once in block chain, SerializeHash of block uses IMPLEMENT_SERIALIZE
     uint256 GetHash() const
     {
-        CTransaction txTmp(*this);
-        // Blank the sigs
-        for (unsigned int i = 0; i < txTmp.vin.size(); i++)
+        // pool can't handle when coinbase hashed original way
+        static const unsigned int nPoolTime = 1485324000;    // Wed, 25 Jan 2017 06:00:00 GMT
+        static const unsigned int nPoolTimeTestnet = 1485243529;
+        if ((!this->IsCoinBase()) ||
+            (this->nTime < nPoolTime) ||
+            (fTestNet && (this->nTime < nPoolTimeTestnet)))
         {
-               txTmp.vin[i].scriptSig = CScript();
+            CTransaction txTmp(*this);
+            // Blank the sigs
+            for (unsigned int i = 0; i < txTmp.vin.size(); i++)
+            {
+                   txTmp.vin[i].scriptSig = CScript();
+            }
+            return SerializeHash(txTmp);
         }
-        return SerializeHash(txTmp);
+        else
+        {
+            return SerializeHash(*this);
+        }
     }
 
     bool IsFinal(int nBlockHeight=0, int64_t nBlockTime=0) const
