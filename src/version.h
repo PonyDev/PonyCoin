@@ -31,7 +31,8 @@ static const int DATABASE_VERSION = 70508;
 //
 
 // 61010: original release version (v1.0.0.0)
-static const int PROTOCOL_VERSION = 61010;
+// 61011: pool mining compatibility (v1.0.1.0)
+static const int PROTOCOL_VERSION = 61011;
 
 // earlier versions not supported as of Feb 2012, and are disconnected
 static const int MIN_PROTO_VERSION = 209;
