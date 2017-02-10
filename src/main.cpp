@@ -1319,7 +1319,7 @@ struct AMOUNT GetPoWSubsidy(int nHeight)
     else if (nHeight == LAST_POW_BLOCK)
     {
         // make it exactly 21 M
-        stSubsidy.nValue = COIN[stSubsidy.nColor] * GetDayReward(day) - 7;
+        stSubsidy.nValue = COIN[stSubsidy.nColor] * GetDayReward(day) - 1;
     }
 
     return stSubsidy;

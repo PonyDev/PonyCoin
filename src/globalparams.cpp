@@ -32,9 +32,9 @@ unsigned short const RPC_PORT_TESTNET = 44445;
 #if PROOF_MODEL == PURE_POS
 // must have a last PoW block if it is to be pure PoS
 // optional overlap between PoW and PoS
-int LAST_POW_BLOCK = 30239;
-int FIRST_POS_BLOCK = 30240;
-int LAST_WHITEPONY_BLOCK = 50400;
+int LAST_POW_BLOCK = 25919;
+int FIRST_POS_BLOCK = 25920;
+int LAST_WHITEPONY_BLOCK = 46080;
 #elif PROOF_MODEL == MIXED_POW_POS
 //
 #endif  // PROOF_MODEL
@@ -52,21 +52,13 @@ static const int nStakeMinConfirmationsTestnet = 5;
 // 8 hr at 2 min block times
 static const int nStakeMinConfirmations = 240;
 
-// day reward multipliers
-//     [1, 1, 1, 2, 2, 2, 3, 3, 3, 5, 5, 5, 8, 8,
-//      16384, 8192, 8192, 4096, 4096, 4096, 4096,
-//      1024, 1024, 1024, 1024, 1024, 1024, 1024, 1024,
-//      512, 512, 512, 512, 512, 512,
-//      512, 512, 512, 512, 512, 512, 512]
-
 static const int POW_DAYS = 42;
 
 const int DAY_REWARDS[POW_DAYS] = {
               1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 4, 4,
               7461, 3730, 3730, 1865, 1865, 1865, 1865,
               466, 466, 466, 466, 466, 466, 466, 466,
-              235, 235, 235, 233, 233, 233, 233, 233,
-              233, 233, 233, 233, 233};
+              466, 466, 466, 466, 466, 466, 239};
 
 
 // avoid counting zeros
