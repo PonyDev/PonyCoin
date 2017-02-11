@@ -13,8 +13,8 @@ PonyCoin (PNY) is a global payment system where you can send to anywhere instant
 * Security
   * Algorithm: Scrypt
   * Fair launch POW blocks 10,800 (10,800 PNY)
-  * Main POW blocks 10,801 - 30,239 (20,989,200 PNY)
-  * POS bonus blocks (100x) 30,240 - 50,400
+  * Main POW blocks 10,801 - 25,919 (20,989,200 PNY)
+  * POS bonus blocks (100x) 25,920 - 46,080
 * Coinbase Maturity: 180 Blocks (6 hr)
 * Stake Minimum COnfirmations: 240
 * Difficulty Adjustment: DGW
