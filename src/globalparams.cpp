@@ -111,6 +111,8 @@ const int64_t STAKE_MULTIPLIER[N_COLORS] = { 0,   1 };
 //    used for calculations in GetProofOfStakeReward().
 // mint color (in order of PNY_COLOR)       -       PONY
 const int64_t BASE_POS_REWARD[N_COLORS] = { 0,   BASE_COIN };
+
+const int64_t HYPERINFLATION_LIMIT[N_COLORS] = {0, BASE_COIN * 2100000000};
 #endif
 
 // IMPORTANT: make sure these values are in smallest divisible units
@@ -455,7 +457,7 @@ void FillNets(const std::map<int, int64_t> &mapDebit,
 // pony
 bool PonyCheck(std::string sHash)
 {
-    const char chPony = '8';
+    const char chPony = '9';
     bool fOK = false;
     for (unsigned int i = 0; i < sHash.size(); ++i)
     {

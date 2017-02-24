@@ -120,6 +120,7 @@ extern const int64_t STAKE_MULTIPLIER[N_COLORS];
 extern const int64_t MAX_MINT_PROOF_OF_STAKE[N_COLORS];
 #else
 extern const int64_t BASE_POS_REWARD[N_COLORS];
+extern const int64_t HYPERINFLATION_LIMIT[N_COLORS];
 #endif
 
 extern const int64_t MAX_MONEY[N_COLORS];

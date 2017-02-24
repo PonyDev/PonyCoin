@@ -1354,11 +1354,14 @@ struct AMOUNT GetProofOfStakeReward(CBlockIndex* pindexPrev)
     struct AMOUNT stSubsidy;
     stSubsidy.nColor = nMintColor;
 
-    if (pindexPrev->nHeight < LAST_WHITEPONY_BLOCK)
+    int64_t nSupply = pindexPrev->vMoneySupply[nMintColor];
+    int64_t nHypLimit = HYPERINFLATION_LIMIT[nMintColor];
+
+    if (nSupply < nHypLimit)
     {
         // 
         static const int64_t nHypRewardCoins = 103125;
-        stSubsidy.nValue = nCent * nHypRewardCoins;
+        stSubsidy.nValue = std::min(nCent * nHypRewardCoins, (nHypLimit - nSupply)/100);
     }
     else
     {
@@ -1367,8 +1370,7 @@ struct AMOUNT GetProofOfStakeReward(CBlockIndex* pindexPrev)
         // rate drops 3% every 3 years
         int nRate = std::max(3, 33 - (3 * (nYears / 3)));
         // PONY is the only mint color ever
-        int64_t supply = pindexPrev->vMoneySupply[nMintColor];
-        stSubsidy.nValue = (nRate * (supply / 100)) / nBlocksPerYear;
+        stSubsidy.nValue = (nRate * (nSupply / 100)) / nBlocksPerYear;
     }
 
     if (fDebug && GetBoolArg("-printcreation"))
@@ -3360,12 +3362,7 @@ bool CBlock::SignBlock(CWallet& wallet, int64_t nFees[])
                     // use hash as random number generator
                     if (!PonyCheck(GetHash().ToString()))
                     {
-                        vtx[0].vout[0].nValue = nRegular;
-                        hashMerkleRoot = BuildMerkleTree();
-                        if (PonyCheck(GetHash().ToString()))
-                        {
-                            return false;
-                        }
+                        return false;
                     }
                 }
 

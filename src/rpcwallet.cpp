@@ -68,7 +68,7 @@ void WalletTxToJSON(const CWalletTx& wtx, Object& entry)
     entry.push_back(Pair("timereceived", (boost::int64_t)wtx.nTimeReceived));
     if (wtx.strTxComment != "")
     {
-        entry.push_back(Pair("txcomment", wtx.strTxComment));
+        entry.push_back(Pair("tx-comment", wtx.strTxComment));
     }
     BOOST_FOREACH(const PAIRTYPE(string,string)& item, wtx.mapValue)
         entry.push_back(Pair(item.first, item.second));

@@ -33,7 +33,8 @@ static const int DATABASE_VERSION = 70508;
 // 61010: original release version (v1.0.0.0)
 // 61011: pool mining compatibility (v1.0.1.0)
 // 61012: adjustment to pow emission (v1.0.2.0)
-static const int PROTOCOL_VERSION = 61012;
+// 61014: fix pos bonus blocks (v1.0.4.0)
+static const int PROTOCOL_VERSION = 61014;
 
 // earlier versions not supported as of Feb 2012, and are disconnected
 static const int MIN_PROTO_VERSION = 209;
