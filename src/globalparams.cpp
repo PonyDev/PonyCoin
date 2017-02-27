@@ -174,7 +174,7 @@ const int64_t STAKE_COMBINE_THRESHOLD[N_COLORS] = { 0, BASE_COIN * 1000 };
 const int MINT_COLOR[N_COLORS] = { (int) PNY_COLOR_NONE,
                                    (int) PNY_COLOR_PONY };
 
-const char *COLOR_TICKER[N_COLORS] = { "<none>", "PNY" };
+const char *COLOR_TICKER[N_COLORS] = { "<none>", "XPN" };
                    
 const char *COLOR_NAME[N_COLORS] = { "<none>", "PonyCoin" };
 
