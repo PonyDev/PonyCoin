@@ -352,8 +352,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-13"/>
-        <source>&amp;Receive PNY</source>
-        <translation>&amp;Receive PNY</translation>
+        <source>&amp;Receive XPN</source>
+        <translation>&amp;Receive XPN</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -362,8 +362,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-7"/>
-        <source>&amp;Send PNY</source>
-        <translation>&amp;Send PNY</translation>
+        <source>&amp;Send XPN</source>
+        <translation>&amp;Send XPN</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -430,8 +430,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-64"/>
-        <source>Send PNY to a ponycoin address</source>
-        <translation>Send PNY to a ponycoin address</translation>
+        <source>Send XPN to a ponycoin address</source>
+        <translation>Send XPN to a ponycoin address</translation>
     </message>
     <message>
         <location line="+47"/>
@@ -647,7 +647,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+59"/>
-        <source>This transaction requires a fee based on the services it uses. You may send it for a fee of %1 PNY, which rewards all users of the PonyCoin network as a result of your usage. Do you want to pay this fee?</source>
+        <source>This transaction requires a fee based on the services it uses. You may send it for a fee of %1 XPN, which rewards all users of the PonyCoin network as a result of your usage. Do you want to pay this fee?</source>
         <translation></translation>
     </message>
     <message>

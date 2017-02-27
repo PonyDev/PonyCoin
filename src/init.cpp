@@ -274,8 +274,8 @@ std::string HelpMessage()
 #endif
 #endif
         "  -detachdb              " + _("Detach block and address databases. Increases shutdown time (default: 0)") + "\n" +
-        "  -defaultcurrency=<ticker>   " + _("Default: PNY") + "\n" +
-        "  -defaultstake=<ticker>   " + _("Default: PNY") + "\n" +
+        "  -defaultcurrency=<ticker>   " + _("Default: XPN") + "\n" +
+        "  -defaultstake=<ticker>   " + _("Default: XPN") + "\n" +
         "  -reservebalance=<amt>    " + _("Amount to reserve that will not stake for default stake") + "\n" +
         "  -reservebalance_<N>=<amt>    " + _("Amount to reserve that will not stake for color <N> where <N> is an int") + "\n" +
         "  -reservebalance_<ticker>=<amt>    " + _("Amount to reserve that will not stake for currency with <ticker>") + "\n" +

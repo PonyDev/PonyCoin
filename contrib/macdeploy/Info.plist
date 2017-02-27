@@ -9,7 +9,7 @@
         <key>CFBundlePackageType</key>
         <string>APPL</string>
         <key>CFBundleGetInfoString</key>
-        <string>PonyCoin [PNY] 1.0.4.0</string>
+        <string>PonyCoin [XPN] 1.0.4.0</string>
         <key>CFBundleExecutable</key>
         <string>PonyCoin-Qt</string>
         <key>CFBundleIdentifier</key>

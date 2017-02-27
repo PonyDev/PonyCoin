@@ -352,7 +352,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-13"/>
-        <source>&amp;Receive PNY</source>
+        <source>&amp;Receive XPN</source>
         <translation>&amp;Получение монет</translation>
     </message>
     <message>
@@ -362,7 +362,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-7"/>
-        <source>&amp;Send PNY</source>
+        <source>&amp;Send XPN</source>
         <translation>Отп&amp;равка монет</translation>
     </message>
     <message>
@@ -427,7 +427,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="-64"/>
-        <source>Send PNY to a ponycoin address</source>
+        <source>Send XPN to a ponycoin address</source>
         <translation>Отправить монеты на указанный адрес ponycoin</translation>
     </message>
     <message>
@@ -629,7 +629,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+59"/>
-        <source>This transaction requires a fee based on the services it uses. You may send it for a fee of %1 PNY, which rewards all users of the PonyCoin network as a result of your usage. Do you want to pay this fee?</source>
+        <source>This transaction requires a fee based on the services it uses. You may send it for a fee of %1 XPN, which rewards all users of the PonyCoin network as a result of your usage. Do you want to pay this fee?</source>
         <translation>Данная транзакция превышает предельно допустимый размер.  Но Вы можете всё равно совершить её, добавив комиссию в %1, которая отправится тем узлам, которые обработают Вашу транзакцию, и поможет поддержать сеть.  Вы хотите добавить комиссию?</translation>
     </message>
     <message>

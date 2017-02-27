@@ -351,7 +351,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-13"/>
-        <source>&amp;Receive PNY</source>
+        <source>&amp;Receive XPN</source>
         <translation>&amp;Vastaanota kolikoita</translation>
     </message>
     <message>
@@ -361,7 +361,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-7"/>
-        <source>&amp;Send PNY</source>
+        <source>&amp;Send XPN</source>
         <translation>&amp;Lähetä kolikoita</translation>
     </message>
     <message>
@@ -426,7 +426,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="-64"/>
-        <source>Send PNY to a ponycoin address</source>
+        <source>Send XPN to a ponycoin address</source>
         <translation>Lähetä kolikkoja ponycoin osoitteeseen</translation>
     </message>
     <message>
@@ -628,7 +628,7 @@ Tämä tuote sisältää OpenSSL-projektin kehittämää ohjelmistoa OpenSSL-ty�
     </message>
     <message>
         <location line="+59"/>
-        <source>This transaction requires a fee based on the services it uses. You may send it for a fee of %1 PNY, which rewards all users of the PonyCoin network as a result of your usage. Do you want to pay this fee?</source>
+        <source>This transaction requires a fee based on the services it uses. You may send it for a fee of %1 XPN, which rewards all users of the PonyCoin network as a result of your usage. Do you want to pay this fee?</source>
         <translation>Tämä rahansiirto ylittää siirtorajan. Voit silti lähettää sen %1 rahansiirtopalkkiota vastaan, joka siirretään rahansiirtoasi käsitteleville solmuille jotta se auttaisi ja tukisi verkkoa. Haluatko maksaa rahansiirtopalkkion?</translation>
     </message>
     <message>
