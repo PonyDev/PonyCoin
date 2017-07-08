@@ -2400,7 +2400,7 @@ Value validatepubkey(const Array& params, bool fHelp)
         {
             ret.push_back(Pair("address", currentAddress));
         }
-        bool fMine = IsMine(*pwalletMain, dest);
+        bool fMine = IsMine(*pwalletMain, keyID);
         ret.push_back(Pair("ismine", fMine));
         ret.push_back(Pair("iscompressed", isCompressed));
         if (fMine) {

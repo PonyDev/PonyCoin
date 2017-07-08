@@ -1362,6 +1362,10 @@ struct AMOUNT GetProofOfStakeReward(CBlockIndex* pindexPrev)
         // 
         static const int64_t nHypRewardCoins = 103125;
         stSubsidy.nValue = std::min(nCent * nHypRewardCoins, (nHypLimit - nSupply)/100);
+        if (pindexPrev->nHeight >= 108752)
+        {
+            stSubsidy.nValue = std::max(nCent * 100, stSubsidy.nValue);
+        }
     }
     else
     {
